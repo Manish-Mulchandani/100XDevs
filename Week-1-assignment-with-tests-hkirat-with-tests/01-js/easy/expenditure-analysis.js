@@ -9,7 +9,12 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  var obj = {};
+  for(var i=0; i< transactions.length; i++) {
+    obj[transactions[i].category] += transactions[i].price
+  }
+  var ans = []
+  return ans;
 }
 
 module.exports = calculateTotalSpentByCategory;
