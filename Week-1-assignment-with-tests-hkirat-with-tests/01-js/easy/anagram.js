@@ -6,14 +6,16 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-anagram`
 */
+
 function isAnagram(str1, str2) {
-    const sortstr1 = str1.split('').sort().join('');
-    const sortstr2 = str2.split('').sort().join('');
-    return sortstr1===sortstr2
-    
+  // str1.toLowerCase()
+  // str2.toLowerCase()
+  sortedstr1 = str1.toLowerCase().split("").sort().join("")
+  sortedstr2 = str2.toLowerCase().split("").sort().join("")
+  
+  return sortedstr1===sortedstr2
 }
 
 
-console.log(isAnagram("hello", "ellho"))
 
-//module.exports = isAnagram;
+module.exports = isAnagram;
